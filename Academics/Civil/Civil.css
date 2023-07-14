@@ -1,0 +1,417 @@
+A {text-decoration: none;} 
+*{
+	margin:0px;
+	padding:0px;
+}
+
+.bgimage{
+	background-image: url('bg.jpg');
+}
+
+.menu{
+
+	width: 100%;
+	height: 100px;
+	background-color: rgba(0,0,0,0.5);
+}
+
+.leftmenu{
+	width: 25%;
+	line-height: 100px;
+	float: left;
+/*	background-color: yellow;*/
+}
+
+.leftmenu h4{
+	padding-left: 70px;
+	font-weight: bold;
+	color: white;
+	font-size: 22px;
+	font-family: 'Montserrat', sans-serif;
+}
+
+
+.rightmenu{
+	width:70%;
+	height: 100px;
+	float: right;
+/*	background-color: red; */
+}
+
+.rightmenu ul{
+	margin-left: 20px;
+}
+
+.rightmenu ul li {
+	font-family: 'Montserrat', sans-serif;
+	display: inline-block;
+	list-style: none;
+	font-size: 15px;
+	color:white;
+	font-weight: bold;
+	line-height: 100px;
+	margin-left: 25px;
+	text-transform: uppercase;
+
+}
+
+#fisrtlist{
+	color: orange;
+}
+
+.rightmenu ul li:hover{
+	color: orange;
+}
+
+
+.text{
+	width: 100%;
+	margin-top: 185px;
+	text-transform: uppercase;
+	text-align: center;
+	color:white;
+}
+
+.text h4{
+
+	font-size: 14px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+.text h1{
+	font-size:62px;
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700px;
+	margin:14px 0px;
+}
+
+.text h3{
+	font-size: 12px;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+#buttonone{
+  background-color: lightblue;
+  border: none;
+  font-size: 12px;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 25px;
+  width: 165px;
+  font-family: 'Montserrat', sans-serif;
+  margin-top: 25px;
+  margin-left: 40px;
+  border: 3px solid white;
+}
+#buttontwo{
+
+	background-color: transparent;
+	border: none;
+	font-family: 'Montserrat', sans-serif;
+	text-transform: uppercase;
+	font-weight: bold;
+	line-height: 40px;
+	border: 3px solid white;
+	width: 150px;
+}
+
+
+
+ /*-------------------------------------------- styling search bar css------------------------------------------- */ 
+ .search input[type=text]{ 
+    width:150px; 
+    height:26px; 
+    border-radius:2px; 
+    border: none;
+  } 
+    
+  .search{ 
+  	line-height: 90px;
+    float:right; 
+    margin:5px; 
+  } 
+    
+  .search button{ 
+  	margin-top: 32px;
+    background-color: #0074D9; 
+    color: #f2f2f2; 
+    float: right; 
+    padding: 5px 10px; 
+    margin-right: 5px; 
+    font-size: 12px; 
+    border-radius:2px; 
+    border-style: inset; 
+    cursor: pointer; 
+  } 
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+/*-------------------------------------------serach bar  css end*---------------------------------------------*/
+
+
+
+
+
+/*--------------------------------------------Page Layout css ---------------------------------------------------*/
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: white;
+  padding: 2px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 0px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 25%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 65%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+/*Column container */
+.row {  
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+}
+
+/* Create two unequal columns that sits next to each other */
+/* Sidebar/left column */
+.side1 {
+  -ms-flex: 10%; /* IE10 */
+  flex: 1%;
+  background-color: #f6f2f1;
+  padding-top : 0px;
+  padding-right: 4px;
+}
+
+/* Main column */
+.main {   
+  -ms-flex: 90%; /* IE10 */
+  flex: 90%;
+  background-color: white;
+  padding: 20px;
+}
+
+/* Sidebar/right column */
+.side2 {
+  -ms-flex: 10%; /* IE10 */
+  flex: -1%;
+  background-color: #f1f1f1;
+  padding-top : 0px;
+  padding-left: 4px;
+}
+/* Fake image, just for this example */
+.fakeimg {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+}
+
+/* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 700px) {
+  .row {   
+    flex-direction: column;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .navbar a {
+    float: none;
+    width: 100%;
+  }
+}
+
+
+
+/*-----------------------------------------------Page Layout css End---------------------------------------------*/
+
+
+
+/*-------------------------------------------FOOTER CSS start------------------------------------------------*/
+footer{
+ margin-bottom:0;
+}
+.footer-distributed{
+  background-color: #292c2f;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+  box-sizing: border-box;
+  width: 100%;
+  text-align: left;
+  font: bold 16px sans-serif;
+ 
+  padding: 15px 50px;
+  margin-top: 520px;
+}
+ 
+.footer-distributed .footer-left,
+.footer-distributed .footer-center,
+.footer-distributed .footer-right{
+  display: inline-block;
+  vertical-align: top;
+}
+ 
+.footer-distributed .footer-left{
+  width: 40%;
+}
+ 
+.footer-distributed h3{
+  color:  #ffffff;
+  font: normal 36px 'Cookie', cursive;
+  margin: 0;
+}
+ 
+.footer-distributed h3 span{
+  color:  #5383d3;
+}
+ 
+ 
+.footer-distributed .footer-links{
+  color:  #ffffff;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+ 
+.footer-distributed .footer-links a{
+  display:inline-block;
+  line-height: 1.8;
+  text-decoration: none;
+  color:  inherit;
+}
+ 
+.footer-distributed .footer-company-name{
+  color:  #8f9296;
+  font-size: 14px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+ 
+.footer-distributed .footer-center{
+  width: 35%;
+}
+ 
+.footer-distributed .footer-center i{
+  background-color:  #33383b;
+  color: #ffffff;
+  font-size: 25px;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 42px;
+  margin: 10px 15px;
+  vertical-align: middle;
+}
+ 
+.footer-distributed .footer-center i.fa-envelope{
+  font-size: 17px;
+  line-height: 38px;
+}
+ 
+.footer-distributed .footer-center p{
+  display: inline-block;
+  color: #ffffff;
+  vertical-align: middle;
+  margin:0;
+}
+ 
+.footer-distributed .footer-center p span{
+  display:block;
+  font-weight: normal;
+  font-size:14px;
+  line-height:2;
+}
+ 
+.footer-distributed .footer-center p a{
+  color:  #5383d3;
+  text-decoration: none;;
+}
+ 
+.footer-distributed .footer-right{
+  width: 20%;
+}
+ 
+.footer-distributed .footer-company-about{
+  line-height: 20px;
+  color:  #92999f;
+  font-size: 13px;
+  font-weight: normal;
+  margin: 0;
+}
+ 
+.footer-distributed .footer-company-about span{
+  display: block;
+  color:  #ffffff;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+ 
+.footer-distributed .footer-icons{
+  margin-top: 25px;
+}
+ 
+.footer-distributed .footer-icons a{
+  display: inline-block;
+  width: 35px;
+  height: 35px;
+  cursor: pointer;
+  background-color:  #33383b;
+  border-radius: 2px;
+ 
+  font-size: 20px;
+  color: #ffffff;
+  text-align: center;
+  line-height: 35px;
+ 
+  margin-right: 3px;
+  margin-bottom: 5px;
+}
+/*------------------------------------------------Footer css End------------------------------------------------*/
